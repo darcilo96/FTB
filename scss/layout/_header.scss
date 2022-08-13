@@ -24,8 +24,11 @@
                         padding: 0 2vw 0 2vw;
                         font-size: 1.2em;
                         font-family: 'Montserrat', sans-serif;
-                        &:visited,:link{
+                        &:visited{
                             color:$whiteGray;
+                    }
+                    &:link{
+                        color:$whiteGray;
                     }
                     &:hover{
                         color:$boldColor;

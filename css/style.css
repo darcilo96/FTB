@@ -40,7 +40,10 @@ padding: 0 2vw 0 2vw;
 font-size: 1.2em;
 font-family: "Montserrat", sans-serif;
 }
-.container .navBar ul li a:visited, .container .navBar ul li a :link {
+.container .navBar ul li a:visited {
+color: #EFEFEF;
+}
+.container .navBar ul li a:link {
 color: #EFEFEF;
 }
 .container .navBar ul li a:hover {
@@ -106,13 +109,7 @@ fill: rgb(90, 87, 87);
 .gridContainer {
 background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
 display: grid;
-grid-template-areas: 
-    "empty1 gridA gridB empty2"
-    "empty1 gridA gridB empty2" 
-    "empty1 gridC gridD empty2" 
-    "empty1 gridC gridD empty2" 
-    "empty1 gridX gridY empty2" 
-    "empty1 gridX gridY empty2";
+grid-template-areas: "empty1 gridA gridB empty2" "empty1 gridA gridB empty2" "empty1 gridC gridD empty2" "empty1 gridC gridD empty2" "empty1 gridX gridY empty2" "empty1 gridX gridY empty2";
 grid-template-columns: 15vw 35vw 35vw 15vw;
 grid-template-rows: 25vh 30vh 30vh 30vh 30vh 30vh;
 color: black;

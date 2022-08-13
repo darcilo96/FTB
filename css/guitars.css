@@ -40,7 +40,10 @@ PALETA DE COLORES
   font-size: 1.2em;
   font-family: "Montserrat", sans-serif;
 }
-.container .navBar ul li a:visited, .container .navBar ul li a :link {
+.container .navBar ul li a:visited {
+  color: #EFEFEF;
+}
+.container .navBar ul li a:link {
   color: #EFEFEF;
 }
 .container .navBar ul li a:hover {
