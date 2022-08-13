@@ -1,0 +1,105 @@
+@import "./utilities/variables";
+@import "./layout/_reset";
+@import "./layout/header";
+
+.gridContainer{
+    background: linear-gradient(to bottom,rgb(18, 31, 31),rgb(25, 25, 25));
+    display:grid;
+    grid-template-areas:
+    "empty1 gridA gridB empty2"
+    "empty1 gridA gridB empty2"
+    "empty1 gridC gridD empty2"
+    "empty1 gridC gridD empty2"
+    "empty1 gridX gridY empty2"
+    "empty1 gridX gridY empty2";
+    grid-template-columns: 15vw 35vw 35vw 15vw;
+    grid-template-rows: 25vh 30vh 30vh 30vh 30vh 30vh;
+    color:black;
+}
+
+.empty1{
+    grid-area: empty1;
+    display:flex;
+}
+.empty2{
+    grid-area: empty2;
+    display:flex;
+}
+.gridA{
+    grid-area: gridA;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    width:35vw;
+    height: 44vh;
+}
+.gridB{
+    grid-area: gridB;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color:#EFEFEF
+}
+.title1,.title2,.title3{
+    font-family:'Bebas neue', sans-serif;
+    color:#feaf37;
+    font-size: 3em;
+}
+.paragraph1, .paragraph3{
+    font-family:'Montserrat', sans-serif;
+    padding: 0 0 0 2vw;
+}
+.paragraph1 b{
+    color:#feaf37;
+}
+.gridC{
+    grid-area:gridC;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color:#EFEFEF
+}
+.paragraph2{
+    font-family:'Montserrat', sans-serif;
+    padding: 0 2vw 0 0;
+}
+.gridD{
+    grid-area:gridD;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridD img{
+    width: 35vw;
+    height:55vh;
+}
+.gridX{
+    grid-area: gridX;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridX img{
+    width: 35vw;
+    height:50vh;
+}
+.gridY{
+    grid-area:gridY;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color:#EFEFEF
+}
+.paragraph3 i{
+    color:#feaf37;
+}
+
+@import "./layout/footer";

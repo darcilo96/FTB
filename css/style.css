@@ -1,0 +1,290 @@
+/*
+
+PALETA DE COLORES
+
+#F66B0EWhite-Gray
+#F66B0E Orange
+#205375 Royal Blue
+#F66B0E Dark blue
+*/
+* {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+.container {
+display: flex;
+background: rgb(18, 31, 31);
+align-items: center;
+justify-content: space-around;
+height: 12vh;
+}
+.container .pageBrand a img {
+width: 9vw;
+}
+.container .navBar {
+display: flex;
+align-items: center;
+}
+.container .navBar ul {
+display: flex;
+justify-content: space-between;
+}
+.container .navBar ul li {
+list-style: none;
+}
+.container .navBar ul li a {
+text-decoration: none;
+padding: 0 2vw 0 2vw;
+font-size: 1.2em;
+font-family: "Montserrat", sans-serif;
+}
+.container .navBar ul li a:visited, .container .navBar ul li a :link {
+color: #EFEFEF;
+}
+.container .navBar ul li a:hover {
+color: #FEAF37;
+transition: 0.4s;
+}
+
+.search {
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-align: center;
+}
+
+.search__input {
+font-family: "Montserrat", sans-serif;
+font-size: inherit;
+background-color: #f4f2f2;
+border: none;
+color: darkslategray;
+padding: 0.7rem 1rem;
+border-radius: 30px;
+width: 12em;
+transition: all ease-in-out 0.5s;
+margin-right: -2rem;
+}
+
+.search__input:hover, .search__input:focus {
+box-shadow: 0 0 1em rgb(114, 197, 197);
+}
+
+.search__input:focus {
+outline: none;
+background-color: #f0eeee;
+border-color: #F66B0E;
+}
+
+.search__input::-webkit-input-placeholder {
+font-weight: 100;
+color: rgb(90, 87, 87);
+}
+
+.search__input:focus + .search__button {
+background-color: #f0eeee;
+}
+
+.search__button {
+border: none;
+background-color: #f4f2f2;
+margin-top: 0.1em;
+}
+
+.search__button:hover {
+cursor: pointer;
+}
+
+.search__icon {
+height: 1.3em;
+width: 1.3em;
+fill: rgb(90, 87, 87);
+}
+
+.gridContainer {
+background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
+display: grid;
+grid-template-areas: 
+    "empty1 gridA gridB empty2"
+    "empty1 gridA gridB empty2" 
+    "empty1 gridC gridD empty2" 
+    "empty1 gridC gridD empty2" 
+    "empty1 gridX gridY empty2" 
+    "empty1 gridX gridY empty2";
+grid-template-columns: 15vw 35vw 35vw 15vw;
+grid-template-rows: 25vh 30vh 30vh 30vh 30vh 30vh;
+color: black;
+}
+
+.empty1 {
+grid-area: empty1;
+display: flex;
+}
+
+.empty2 {
+grid-area: empty2;
+display: flex;
+}
+
+.gridA {
+grid-area: gridA;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+iframe {
+width: 35vw;
+height: 44vh;
+}
+
+.gridB {
+grid-area: gridB;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: justify;
+color: #EFEFEF;
+}
+
+.title1, .title2, .title3 {
+font-family: "Bebas neue", sans-serif;
+color: #feaf37;
+font-size: 3em;
+}
+
+.paragraph1, .paragraph3 {
+font-family: "Montserrat", sans-serif;
+padding: 0 0 0 2vw;
+}
+
+.paragraph1 b {
+color: #feaf37;
+}
+
+.gridC {
+grid-area: gridC;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: justify;
+color: #EFEFEF;
+}
+
+.paragraph2 {
+font-family: "Montserrat", sans-serif;
+padding: 0 2vw 0 0;
+}
+
+.gridD {
+grid-area: gridD;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.gridD img {
+width: 35vw;
+height: 55vh;
+}
+
+.gridX {
+grid-area: gridX;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.gridX img {
+width: 35vw;
+height: 50vh;
+}
+
+.gridY {
+grid-area: gridY;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: justify;
+color: #EFEFEF;
+}
+
+.paragraph3 i {
+color: #feaf37;
+}
+
+.footerContainer {
+height: 15vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: rgb(25, 25, 25);
+}
+
+.button {
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+background: rgb(25, 25, 25);
+color: white;
+padding: 0.35em 0;
+font-size: 17px;
+border: none;
+border-radius: 0.7em;
+letter-spacing: 0.08em;
+position: relative;
+display: flex;
+align-content: center;
+align-items: center;
+overflow: hidden;
+height: 2.1em;
+padding-left: 3em;
+padding-right: 0.7em;
+}
+
+.button .icon {
+background: #fff;
+margin-right: 1em;
+height: 2.2em;
+width: 2.2em;
+border-radius: 0.5em;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+left: 0.3em;
+transition: all 0.7s;
+}
+
+.shere {
+width: 1.3rem;
+height: 1.3rem;
+margin-left: 4px;
+}
+
+.button:hover .icon {
+width: calc(100% - 0.6rem);
+}
+
+.button:hover .shere {
+width: calc(100% - 0.6rem);
+display: none;
+}
+
+.button .icon-shere {
+color: rgb(25, 25, 25);
+width: 1.5rem;
+height: 1.5rem;
+display: none;
+padding: 0 0.5vw 0 0.5vw;
+}
+
+.button:hover .icon .icon-shere {
+display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

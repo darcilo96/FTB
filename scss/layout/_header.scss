@@ -1,0 +1,92 @@
+.container{
+    display: flex;
+    background: $headerBg;
+    align-items: center;
+    justify-content: space-around;
+    height: 12vh;
+    .pageBrand{
+        a{
+            img{
+                width: 9vw;
+            }
+        }
+    }
+    .navBar{
+        display: flex;
+        align-items: center;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    list-style:none;
+                    a{
+                        text-decoration: none;
+                        padding: 0 2vw 0 2vw;
+                        font-size: 1.2em;
+                        font-family: 'Montserrat', sans-serif;
+                        &:visited,:link{
+                            color:$whiteGray;
+                    }
+                    &:hover{
+                        color:$boldColor;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+    }
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.search__input {
+    font-family:'Montserrat', sans-serif;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color:darkslategray;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+}
+
+.search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em rgb(114, 197, 197);
+}
+
+.search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+    border-color: #F66B0E;
+}
+
+.search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: rgb(90, 87, 87);
+}
+
+.search__input:focus + .search__button {
+    background-color: #f0eeee;
+}
+
+.search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: 0.1em;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}
+
+.search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: rgb(90, 87, 87);
+}
