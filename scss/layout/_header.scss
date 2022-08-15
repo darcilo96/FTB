@@ -1,6 +1,7 @@
+@import "../utilities/variables";
 .container{
     display: flex;
-    background: $headerBg;
+    background-color: $headerBg;
     align-items: center;
     justify-content: space-around;
     height: 12vh;
@@ -14,23 +15,26 @@
     .navBar{
         display: flex;
         align-items: center;
-            ul{
-                display: flex;
-                justify-content: space-between;
-                li{
-                    list-style:none;
-                    a{
-                        text-decoration: none;
-                        padding: 0 2vw 0 2vw;
-                        font-size: 1.2em;
-                        font-family: 'Montserrat', sans-serif;
-                        &:link,:visited{
-                            color:$whiteGray;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                list-style:none;
+                a{
+                    text-decoration: none;
+                    padding: 0 2vw 0 2vw;
+                    font-size: 1.2em;
+                    font-family: 'Montserrat', sans-serif;
+                    &:link{
+                        color:$whiteGray;
                     }
-                        &:hover{
-                            color:$boldColor;
-                            transition: 0.4s;
+                    &:visited{
+                        color:$whiteGray;
                     }
+                    &:hover{
+                        color:$boldColor;
+                        transition: 0.4s;
+                    }   
                 }
             }
         }

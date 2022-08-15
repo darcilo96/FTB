@@ -1,0 +1,139 @@
+@import "./layout/reset";
+@import "./layout/header";
+@import "./utilities/variables";
+
+.gridContainer{
+    background: linear-gradient(to bottom,rgb(18, 31, 31),rgb(25, 25, 25));
+    display:grid;
+    grid-template-areas:
+    "empty1 gridA gridB empty2"
+    "empty1 gridA gridB empty2"
+    "empty1 gridC gridD empty2"
+    "empty1 gridC gridD empty2"
+    "empty1 gridX gridY empty2"
+    "empty1 gridX gridY empty2"
+    "empty1 gridE gridF empty2"
+    "empty1 gridE gridF empty2"
+    "empty1 gridG gridH empty2"
+    "empty1 gridG gridH empty2";
+    grid-template-columns: 15vw 35vw 35vw 15vw;
+    grid-template-rows: 25vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh;
+    color:black;
+    .gridA{
+        grid-area: gridA;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:35vw;
+        }
+    }
+    .gridB{
+        grid-area: gridB;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        color:$whiteGray;
+    }
+    .title1,.title2,.title3,.title4,.title5{
+        font-family:'Bebas neue', sans-serif;
+        color:#feaf37;
+        font-size: 3em;
+    }
+    .paragraph1, .paragraph3, .paragraph5{
+        font-family:'Montserrat', sans-serif;
+        padding: 0 0 0 2vw;
+    }
+    .paragraph1 b{
+        color:#feaf37;
+    }
+    .gridC{
+        grid-area:gridC;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        color:$whiteGray;
+    }
+    .paragraph2,.paragraph4{
+        font-family:'Montserrat', sans-serif;
+        padding: 0 2vw 0 0;
+    }
+    .gridD{
+        grid-area:gridD;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 35vw;
+        }
+    }
+    .gridX{
+        grid-area: gridX;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gridE{
+        grid-area:gridE;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        color:$whiteGray
+    }
+    .paragraph2{
+        font-family:'Montserrat', sans-serif;
+        padding: 0 2vw 0 0;
+    }
+    .gridF{
+        grid-area:gridF;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 35vw;
+            height: 50vh;
+        }
+    }
+    .gridG{
+        grid-area: gridG;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:35vw;
+        }
+    }
+    .gridH{
+        grid-area: gridH;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        color:$whiteGray
+    }
+    .gridX img{
+        width: 35vw;
+        height:50vh;
+    }
+    .gridY{
+        grid-area:gridY;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        color:$whiteGray;
+    }
+    .paragraph3 i{
+        color:#feaf37;
+    }
+}
+
+@import "./layout/footer";

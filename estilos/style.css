@@ -1,3 +1,15 @@
+/*
+
+PALETA DE COLORES
+
+#F66B0EWhite-Gray
+#F66B0E Orange
+#205375 Royal Blue
+#F66B0E Dark blue
+*/
+/*Colors*/
+/*measurements*/
+/*borders radius*/
 * {
   margin: 0;
   padding: 0;
@@ -109,147 +121,113 @@ PALETA DE COLORES
   fill: rgb(90, 87, 87);
 }
 
-/*
-
-PALETA DE COLORES
-
-#F66B0EWhite-Gray
-#F66B0E Orange
-#205375 Royal Blue
-#F66B0E Dark blue
-*/
-/*Colors*/
-/*measurements*/
-/*borders radius*/
 .gridContainer {
   background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
   display: grid;
-  grid-template-areas: "empty1 gridA  empty3 gridC  empty2" "empty1 gridB  empty3 gridD  empty2" "empty1 empty4 empty3 empty5 empty2" "empty1 gridE  empty3 gridG  empty2" "empty1 gridF  empty3 gridH  empty2";
-  grid-template-columns: 14vw 34vw 2vw 34vw 14vw;
-  grid-template-rows: 69vh 43vh 5vh 70vh 35vh;
-  font-family: "Montserrat", "sans-serif";
+  grid-template-areas: "empty1 gridA gridB empty2" "empty1 gridA gridB empty2" "empty1 gridC gridD empty2" "empty1 gridC gridD empty2" "empty1 gridX gridY empty2" "empty1 gridX gridY empty2";
+  grid-template-columns: 15vw 35vw 35vw 15vw;
+  grid-template-rows: 25vh 30vh 30vh 30vh 30vh 30vh;
+  color: black;
 }
-.gridContainer .gridA {
-  grid-area: gridA;
-  padding-top: 2vh;
+
+.empty1 {
+  grid-area: empty1;
   display: flex;
-  flex-direction: column;
+}
+
+.empty2 {
+  grid-area: empty2;
+  display: flex;
+}
+
+.gridA {
+  grid-area: gridA;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
-.gridContainer .gridA img {
-  width: 34vw;
-  border-radius: 30px 30px 0px 0px;
+
+iframe {
+  width: 35vw;
+  height: 44vh;
 }
-.gridContainer .gridB {
+
+.gridB {
   grid-area: gridB;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  background-color: #EFEFEF;
-  border-radius: 0 0 20px 20px;
-}
-.gridContainer .gridB h2 {
-  color: rgb(25, 25, 25);
-  text-align: center;
-  padding-top: 0.5em;
-  font-family: "bebas neue", "sans-serif";
-  font-size: 2em;
-}
-.gridContainer .gridB p {
+  justify-content: center;
+  align-items: center;
   text-align: justify;
-  padding: 0 1em 0 1em;
-  color: rgb(25, 25, 25);
+  color: #EFEFEF;
 }
-.gridContainer .gridC {
+
+.title1, .title2, .title3 {
+  font-family: "Bebas neue", sans-serif;
+  color: #feaf37;
+  font-size: 3em;
+}
+
+.paragraph1, .paragraph3 {
+  font-family: "Montserrat", sans-serif;
+  padding: 0 0 0 2vw;
+}
+
+.paragraph1 b {
+  color: #feaf37;
+}
+
+.gridC {
   grid-area: gridC;
-  padding-top: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color: #EFEFEF;
 }
-.gridContainer .gridC img {
-  width: 34vw;
-  border-radius: 30px 30px 0px 0px;
+
+.paragraph2 {
+  font-family: "Montserrat", sans-serif;
+  padding: 0 2vw 0 0;
 }
-.gridContainer .gridD {
+
+.gridD {
   grid-area: gridD;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #EFEFEF;
-  border-radius: 0 0 20px 20px;
+  justify-content: center;
+  align-items: center;
 }
-.gridContainer .gridD h2 {
-  color: rgb(25, 25, 25);
-  text-align: center;
-  padding-top: 0.5em;
-  font-family: "bebas neue", "sans-serif";
-  font-size: 2em;
+
+.gridD img {
+  width: 35vw;
+  height: 55vh;
 }
-.gridContainer .gridD p {
-  text-align: justify;
-  padding: 0 1em 0 1em;
-  color: rgb(25, 25, 25);
+
+.gridX {
+  grid-area: gridX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.gridContainer .gridE {
-  grid-area: gridE;
+
+.gridX img {
+  width: 35vw;
+  height: 50vh;
+}
+
+.gridY {
+  grid-area: gridY;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.gridContainer .gridE img {
-  width: 34vw;
-  border-radius: 30px 30px 0px 0px;
-}
-.gridContainer .gridF {
-  grid-area: gridF;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #EFEFEF;
-  border-radius: 0 0 20px 20px;
-}
-.gridContainer .gridF h2 {
-  color: rgb(25, 25, 25);
-  text-align: center;
-  padding-top: 0.5em;
-  font-family: "bebas neue", "sans-serif";
-  font-size: 2em;
-}
-.gridContainer .gridF p {
+  align-items: center;
   text-align: justify;
-  padding: 0 1em 0 1em;
-  color: rgb(25, 25, 25);
+  color: #EFEFEF;
 }
-.gridContainer .gridG {
-  grid-area: gridG;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.gridContainer .gridG img {
-  width: 34vw;
-  border-radius: 30px 30px 0px 0px;
-}
-.gridContainer .gridH {
-  grid-area: gridH;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #EFEFEF;
-  border-radius: 0 0 20px 20px;
-}
-.gridContainer .gridH h2 {
-  color: rgb(25, 25, 25);
-  text-align: center;
-  padding-top: 0.5em;
-  font-family: "bebas neue", "sans-serif";
-  font-size: 2em;
-}
-.gridContainer .gridH p {
-  text-align: justify;
-  padding: 0 1em 0 1em;
-  color: rgb(25, 25, 25);
+
+.paragraph3 i {
+  color: #feaf37;
 }
 
 .footerContainer {
@@ -319,6 +297,4 @@ PALETA DE COLORES
 
 .button:hover .icon .icon-shere {
   display: flex;
-}
-
-/*# sourceMappingURL=gear.css.map */
+}/*# sourceMappingURL=style.css.map */
