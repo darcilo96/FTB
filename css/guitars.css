@@ -13,9 +13,24 @@ PALETA DE COLORES
 #205375 Royal Blue
 #F66B0E Dark blue
 */
+/*Colors*/
+/*measurements*/
+/*borders radius*/
+/*
+
+PALETA DE COLORES
+
+#F66B0EWhite-Gray
+#F66B0E Orange
+#205375 Royal Blue
+#F66B0E Dark blue
+*/
+/*Colors*/
+/*measurements*/
+/*borders radius*/
 .container {
   display: flex;
-  background: rgb(18, 31, 31);
+  background-color: rgb(18, 31, 31);
   align-items: center;
   justify-content: space-around;
   height: 12vh;
@@ -40,10 +55,10 @@ PALETA DE COLORES
   font-size: 1.2em;
   font-family: "Montserrat", sans-serif;
 }
-.container .navBar ul li a:visited {
+.container .navBar ul li a:link {
   color: #EFEFEF;
 }
-.container .navBar ul li a:link {
+.container .navBar ul li a:visited {
   color: #EFEFEF;
 }
 .container .navBar ul li a:hover {
