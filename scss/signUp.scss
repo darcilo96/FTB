@@ -1,0 +1,140 @@
+@import "./layout/reset";
+@import "./utilities/variables";
+@import "./layout/header";
+
+.gridContainer{
+    background: linear-gradient(to bottom,rgb(18, 31, 31),rgb(25, 25, 25));
+    display:grid;
+    grid-template-areas:
+    "gridA gridB gridB gridE"
+    "gridA gridC gridD gridE"
+    "gridA gridC gridD gridE"
+    "gridA gridF gridF gridE";
+    grid-template-columns: 15vw 35vw 35vw 15vw;
+    grid-template-rows: 10vh 15vh 25vh 25vh;
+    color:$whiteGray;
+    .gridA{
+        grid-area: gridA;
+        display: flex;
+    }
+    .gridB{
+        grid-area: gridB;
+        display: flex;
+    }
+    .gridC{
+        grid-area: gridC;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            font-family: $bebas;
+            font-size: 4em;
+            color:$boldColor;
+        }
+        p{
+            font-family: $montserrat;
+        }
+    }
+    .gridD{
+        grid-area: gridD;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+        background-color: $whiteGray;
+        .login{
+            display: flex;
+            flex-direction: row;
+            font-family: $montserrat;
+            .labels{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 1.5em;
+                line-height: 1.8em;
+                color:$headerBg;
+            }
+            .inputs{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1em 0 0 1em;
+                width:20vw;
+                input{
+                    height: 2em;
+                    border-radius: 1em;
+                    padding-left: 1em;
+                    font-family: $montserrat;
+                    height: 3.5vh;
+                }
+            }
+        }
+        .googleAccess{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 9vh;
+            font-family: $montserrat;
+            .forgotPwd{
+                color:$mainBg;
+                a{
+                font-size: 0.9em;
+                text-decoration: none;
+                &:link{
+                    color:$headerBg;
+                }
+                &:visited{
+                    color:$headerBg;
+                }
+                &:hover{
+                    color: $boldColor;
+                    transition: 0.4s;
+                }
+            }
+        }
+    } 
+        button {
+            padding: 1.3em 3em;
+            font-size: 12px;
+            font-family: $montserrat;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            }
+            
+            button:hover {
+            background-color: $boldColor;
+            box-shadow: 0px 15px 20px rgba(254, 175, 55, 0.4);
+            color: #fff;
+            transform: translateY(-0.2em);
+            }
+            
+            button:active {
+            transform: translateY(-1px);
+            }
+    }
+    .gridE{
+        grid-area: gridE;
+        display: flex;
+    }
+    .gridF{
+        grid-area: gridF;
+        display: flex;
+    }
+}
+
+
+
+
+@import "./layout/footer";
