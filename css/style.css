@@ -10,226 +10,656 @@ PALETA DE COLORES
 /*Colors*/
 /*measurements*/
 /*borders radius*/
+/*fonts*/
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/*
+@media (min-width: 320px) {
+  /*
 
-PALETA DE COLORES
+  PALETA DE COLORES
 
-#F66B0EWhite-Gray
-#F66B0E Orange
-#205375 Royal Blue
-#F66B0E Dark blue
-*/
-/*Colors*/
-/*measurements*/
-/*borders radius*/
-.container {
-  display: flex;
-  background-color: rgb(18, 31, 31);
-  align-items: center;
-  justify-content: space-around;
-  height: 12vh;
+  #F66B0EWhite-Gray
+  #F66B0E Orange
+  #205375 Royal Blue
+  #F66B0E Dark blue
+  */
+  /*Colors*/
+  /*measurements*/
+  /*borders radius*/
+  /*fonts*/
+  * {
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+  .container {
+    background-color: darkslategray;
+    height: 15vh;
+  }
+  .checkBox {
+    display: none;
+  }
+  .pageBrand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    height: 10vh;
+  }
+  .lblCheckBox {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    filter: invert(1);
+    cursor: pointer;
+    z-index: 1;
+  }
+  .mainMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(90, 87, 87);
+    transform: translateY(-100%);
+    transition: 0.5s;
+  }
+  .hamburguer:hover {
+    filter: invert(0);
+    transition: 0.5s;
+  }
+  ul {
+    padding: 1em;
+  }
+  li {
+    list-style: none;
+    padding: 1em;
+  }
+  a {
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "montserrat", "sans-serif";
+  }
+  a:link {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
+  .checkBox:checked + .mainMenu {
+    transform: translateY(0);
+    transition: 0.5s;
+  }
+  .navBar {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkBox {
+    display: none;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 2em;
+  }
+  .search__input {
+    font-family: "Montserrat", sans-serif;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: darkslategray;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 25vw;
+    height: 1em;
+    top: 2em;
+    right: 8em;
+    position: absolute;
+    transition: all ease-in-out 0.5s;
+    margin-right: -2rem;
+  }
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em rgb(114, 197, 197);
+  }
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+    border-color: #F66B0E;
+  }
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: rgb(90, 87, 87);
+  }
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  .search__button {
+    border: none;
+    background-color: transparent;
+    margin-top: 0.1em;
+    position: absolute;
+    top: 3em;
+    right: 9em;
+  }
+  .search__button:hover {
+    cursor: pointer;
+  }
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: rgb(90, 87, 87);
+  }
 }
-.container .pageBrand a img {
-  width: 9vw;
-}
-.container .navBar {
-  display: flex;
-  align-items: center;
-}
-.container .navBar ul {
-  display: flex;
-  justify-content: space-between;
-}
-.container .navBar ul li {
-  list-style: none;
-}
-.container .navBar ul li a {
-  text-decoration: none;
-  padding: 0 2vw 0 2vw;
-  font-size: 1.2em;
-  font-family: "Montserrat", sans-serif;
-}
-.container .navBar ul li a:link {
-  color: #EFEFEF;
-}
-.container .navBar ul li a:visited {
-  color: #EFEFEF;
-}
-.container .navBar ul li a:hover {
-  color: #FEAF37;
-  transition: 0.4s;
-}
+@media (min-width: 768px) {
+  /*
 
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-}
+  PALETA DE COLORES
 
-.search__input {
-  font-family: "Montserrat", sans-serif;
-  font-size: inherit;
-  background-color: #f4f2f2;
-  border: none;
-  color: darkslategray;
-  padding: 0.7rem 1rem;
-  border-radius: 30px;
-  width: 12em;
-  transition: all ease-in-out 0.5s;
-  margin-right: -2rem;
+  #F66B0EWhite-Gray
+  #F66B0E Orange
+  #205375 Royal Blue
+  #F66B0E Dark blue
+  */
+  /*Colors*/
+  /*measurements*/
+  /*borders radius*/
+  /*fonts*/
+  div.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(18, 31, 31);
+    align-items: stretch;
+    justify-content: space-around;
+    height: 22vh;
+  }
+  div.container .pageBrand {
+    width: 100vw;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+  div.container .pageBrand a img {
+    width: 20vw;
+  }
+  div.container .navBar {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.container .navBar .checkBox {
+    display: none;
+  }
+  div.container .navBar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  div.container .navBar ul li {
+    list-style: none;
+  }
+  div.container .navBar ul li a {
+    text-decoration: none;
+    padding: 0 2vw 0 2vw;
+    font-size: 0.98em;
+    font-family: "Montserrat", sans-serif;
+  }
+  div.container .navBar ul li a:link {
+    color: #EFEFEF;
+  }
+  div.container .navBar ul li a:visited {
+    color: #EFEFEF;
+  }
+  div.container .navBar ul li a:hover {
+    color: #FEAF37;
+    transition: 0.4s;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 2em;
+  }
+  .search__input {
+    font-family: "Montserrat", sans-serif;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: darkslategray;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 25vw;
+    height: 1em;
+    transition: all ease-in-out 0.5s;
+    margin-right: -2rem;
+  }
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em rgb(114, 197, 197);
+  }
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+    border-color: #F66B0E;
+  }
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: rgb(90, 87, 87);
+  }
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  .search__button {
+    border: none;
+    background-color: transparent;
+    margin-top: 0.1em;
+  }
+  .search__button:hover {
+    cursor: pointer;
+  }
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: rgb(90, 87, 87);
+  }
 }
+@media (min-width: 1200px) {
+  /*
 
-.search__input:hover, .search__input:focus {
-  box-shadow: 0 0 1em rgb(114, 197, 197);
+  PALETA DE COLORES
+
+  #F66B0EWhite-Gray
+  #F66B0E Orange
+  #205375 Royal Blue
+  #F66B0E Dark blue
+  */
+  /*Colors*/
+  /*measurements*/
+  /*borders radius*/
+  /*fonts*/
+  .container {
+    display: flex;
+    background-color: rgb(18, 31, 31);
+    align-items: center;
+    justify-content: space-around;
+    height: 12vh;
+  }
+  .container .pageBrand a img {
+    width: 9vw;
+  }
+  .container .navBar {
+    display: flex;
+    align-items: center;
+  }
+  .container .navBar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .navBar ul li {
+    list-style: none;
+  }
+  .container .navBar ul li a {
+    text-decoration: none;
+    padding: 0 2vw 0 2vw;
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+  }
+  .container .navBar ul li a:link {
+    color: #EFEFEF;
+  }
+  .container .navBar ul li a:visited {
+    color: #EFEFEF;
+  }
+  .container .navBar ul li a:hover {
+    color: #FEAF37;
+    transition: 0.4s;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .search__input {
+    font-family: "Montserrat", sans-serif;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: darkslategray;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out 0.5s;
+    margin-right: -2rem;
+  }
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em rgb(114, 197, 197);
+  }
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+    border-color: #F66B0E;
+  }
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: rgb(90, 87, 87);
+  }
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  .search__button {
+    border: none;
+    background-color: transparent;
+    margin-top: 0.1em;
+  }
+  .search__button:hover {
+    cursor: pointer;
+  }
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: rgb(90, 87, 87);
+  }
 }
-
-.search__input:focus {
-  outline: none;
-  background-color: #f0eeee;
-  border-color: #F66B0E;
+@media (min-width: 320px) {
+  .gridContainer {
+    background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
+    display: grid;
+    grid-template-areas: "empty1 gridA empty2" "empty1 gridB empty2" "empty1 gridC empty2" "empty1 gridD empty2" "empty1 gridX empty2" "empty1 gridY empty2";
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 60vh 20vh 25vh 25vh 22vh 22vh;
+    color: black;
+  }
+  .empty1 {
+    grid-area: empty1;
+    display: flex;
+  }
+  .empty2 {
+    grid-area: empty2;
+    display: flex;
+  }
+  .gridA {
+    grid-area: gridA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe {
+    padding-top: 3vh;
+    width: 50vw;
+    height: 35vh;
+  }
+  .gridB {
+    grid-area: gridB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .title1, .title2, .title3 {
+    font-family: "Bebas neue", sans-serif;
+    color: #feaf37;
+    font-size: 1.8em;
+  }
+  .paragraph1, .paragraph3 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0 0 2vw;
+    font-size: 0.65em;
+  }
+  .paragraph1 b {
+    color: #feaf37;
+  }
+  .gridC {
+    grid-area: gridC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .paragraph2 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 2vw 0 0;
+    font-size: 0.65em;
+  }
+  .gridD {
+    grid-area: gridD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridD img {
+    width: 45vw;
+    height: 40vh;
+  }
+  .gridX {
+    grid-area: gridX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridX img {
+    width: 45vw;
+    height: 40vh;
+  }
+  .gridY {
+    grid-area: gridY;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .paragraph3 i {
+    color: #feaf37;
+  }
 }
-
-.search__input::-webkit-input-placeholder {
-  font-weight: 100;
-  color: rgb(90, 87, 87);
+@media (min-width: 768px) {
+  .gridContainer {
+    background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
+    display: grid;
+    grid-template-areas: "empty1 gridA gridB empty2" "empty1 gridA gridB empty2" "empty1 gridC gridD empty2" "empty1 gridC gridD empty2" "empty1 gridX gridY empty2" "empty1 gridX gridY empty2";
+    grid-template-columns: 5vw 45vw 45vw 5vw;
+    grid-template-rows: 20vh 20vh 25vh 25vh 22vh 22vh;
+    color: black;
+  }
+  .empty1 {
+    grid-area: empty1;
+    display: flex;
+  }
+  .empty2 {
+    grid-area: empty2;
+    display: flex;
+  }
+  .gridA {
+    grid-area: gridA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe {
+    padding-top: 3vh;
+    width: 50vw;
+    height: 35vh;
+  }
+  .gridB {
+    grid-area: gridB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .title1, .title2, .title3 {
+    font-family: "Bebas neue", sans-serif;
+    color: #feaf37;
+    font-size: 1.8em;
+  }
+  .paragraph1, .paragraph3 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0 0 2vw;
+    font-size: 0.65em;
+  }
+  .paragraph1 b {
+    color: #feaf37;
+  }
+  .gridC {
+    grid-area: gridC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .paragraph2 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 2vw 0 0;
+    font-size: 0.65em;
+  }
+  .gridD {
+    grid-area: gridD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridD img {
+    width: 45vw;
+    height: 40vh;
+  }
+  .gridX {
+    grid-area: gridX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridX img {
+    width: 45vw;
+    height: 40vh;
+  }
+  .gridY {
+    grid-area: gridY;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .paragraph3 i {
+    color: #feaf37;
+  }
 }
-
-.search__input:focus + .search__button {
-  background-color: #f0eeee;
+@media (min-width: 1200px) {
+  .gridContainer {
+    background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
+    display: grid;
+    grid-template-areas: "empty1 gridA gridB empty2" "empty1 gridA gridB empty2" "empty1 gridC gridD empty2" "empty1 gridC gridD empty2" "empty1 gridX gridY empty2" "empty1 gridX gridY empty2";
+    grid-template-columns: 15vw 35vw 35vw 15vw;
+    grid-template-rows: 25vh 30vh 30vh 30vh 30vh 30vh;
+    color: black;
+  }
+  .empty1 {
+    grid-area: empty1;
+    display: flex;
+  }
+  .empty2 {
+    grid-area: empty2;
+    display: flex;
+  }
+  .gridA {
+    grid-area: gridA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe {
+    width: 35vw;
+    height: 44vh;
+  }
+  .gridB {
+    grid-area: gridB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .title1, .title2, .title3 {
+    font-family: "Bebas neue", sans-serif;
+    color: #feaf37;
+    font-size: 3em;
+  }
+  .paragraph1, .paragraph3 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0 0 2vw;
+  }
+  .paragraph1 b {
+    color: #feaf37;
+  }
+  .gridC {
+    grid-area: gridC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .paragraph2 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 2vw 0 0;
+  }
+  .gridD {
+    grid-area: gridD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridD img {
+    width: 35vw;
+    height: 55vh;
+  }
+  .gridX {
+    grid-area: gridX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridX img {
+    width: 35vw;
+    height: 50vh;
+  }
+  .gridY {
+    grid-area: gridY;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #EFEFEF;
+  }
+  .paragraph3 i {
+    color: #feaf37;
+  }
 }
-
-.search__button {
-  border: none;
-  background-color: #f4f2f2;
-  margin-top: 0.1em;
-}
-
-.search__button:hover {
-  cursor: pointer;
-}
-
-.search__icon {
-  height: 1.3em;
-  width: 1.3em;
-  fill: rgb(90, 87, 87);
-}
-
-.gridContainer {
-  background: linear-gradient(to bottom, rgb(18, 31, 31), rgb(25, 25, 25));
-  display: grid;
-  grid-template-areas: "empty1 gridA gridB empty2" "empty1 gridA gridB empty2" "empty1 gridC gridD empty2" "empty1 gridC gridD empty2" "empty1 gridX gridY empty2" "empty1 gridX gridY empty2";
-  grid-template-columns: 15vw 35vw 35vw 15vw;
-  grid-template-rows: 25vh 30vh 30vh 30vh 30vh 30vh;
-  color: black;
-}
-
-.empty1 {
-  grid-area: empty1;
-  display: flex;
-}
-
-.empty2 {
-  grid-area: empty2;
-  display: flex;
-}
-
-.gridA {
-  grid-area: gridA;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-iframe {
-  width: 35vw;
-  height: 44vh;
-}
-
-.gridB {
-  grid-area: gridB;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  color: #EFEFEF;
-}
-
-.title1, .title2, .title3 {
-  font-family: "Bebas neue", sans-serif;
-  color: #feaf37;
-  font-size: 3em;
-}
-
-.paragraph1, .paragraph3 {
-  font-family: "Montserrat", sans-serif;
-  padding: 0 0 0 2vw;
-}
-
-.paragraph1 b {
-  color: #feaf37;
-}
-
-.gridC {
-  grid-area: gridC;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  color: #EFEFEF;
-}
-
-.paragraph2 {
-  font-family: "Montserrat", sans-serif;
-  padding: 0 2vw 0 0;
-}
-
-.gridD {
-  grid-area: gridD;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gridD img {
-  width: 35vw;
-  height: 55vh;
-}
-
-.gridX {
-  grid-area: gridX;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gridX img {
-  width: 35vw;
-  height: 50vh;
-}
-
-.gridY {
-  grid-area: gridY;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  color: #EFEFEF;
-}
-
-.paragraph3 i {
-  color: #feaf37;
-}
-
 .footerContainer {
   height: 15vh;
   display: flex;
